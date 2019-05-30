@@ -1,5 +1,7 @@
-<link rel="stylesheet" href="css/main.css"/>
-   <script src="public/js/photos.js"></script>
+<head>
+    <!-- <link rel="stylesheet" href="css/main.css"/> -->
+    <script type="text/javascript" src="/js/photos.js"></script>
+</head>
    <div class="booth">
        <div id="videodiv">
            <video id="video" width="400" height="300"></video>
@@ -72,6 +74,8 @@ function savetogallery2()
    xhr.open("post", "./modal/image_upload.php");
    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
    xhr.send("image=" + document.querySelector('#canvas').toDataURL());
+
+   
 }
 </script>
 
